@@ -90,3 +90,48 @@
 .header__menu .menu__list li:first-child {
     padding: 0;
 }
+
+.main {
+    height: 600px;
+    &__inner {
+        display: flex;
+        
+    }
+
+    &__info {
+        width: 700px;
+        padding-top: 130px;
+       
+        &-title {
+            font-weight: 900;
+            padding-bottom: 40px;
+            font-size: 51px;
+            line-height: 60px;
+        }
+        &-text {
+            color: $text;
+            width: 320px;
+            line-height: 22px;
+            padding-bottom: 50px;
+        }
+        &-btn {
+            padding-bottom: 120px;
+           
+            button {
+                background-color: $dark-blue;
+                min-width: 320px;
+                height: 60px;
+                color: #fff;
+                text-transform: uppercase;
+                font-size: 15px;
+                border: none;
+               
+                i.fa-arrow-right {
+                    padding-left: 14px;
+                    font-size: 20px;
+                    
+                }
+            }
+        }
+    }
+}
