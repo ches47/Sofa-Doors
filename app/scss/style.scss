@@ -135,3 +135,43 @@
         }
     }
 }
+
+.advantage {
+    
+    &__title {
+        padding: 60px 0;
+        text-align: center;
+        font-size: 32px;
+        font-weight: 700;
+    }
+    &__main {
+        display: flex;
+        justify-content: space-between;
+        padding-bottom: 60px;
+        &-block {
+            width: 220px;
+            text-align: center;
+            
+        }
+        &-icon {
+            font-size: 90px;
+        }
+        &-plane-img {
+            color: $blue;
+        }
+        &-online-img {
+            color: $green;
+        }
+        &-product-img{
+            color: $red;    
+        }
+        &-title {
+            font-size: 24px;
+            font-weight: 700;
+            padding: 40px 0 20px;
+        }
+        &-text {
+            color: $text; 
+        }
+    }
+}
