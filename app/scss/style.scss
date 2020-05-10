@@ -208,6 +208,7 @@
                 margin-right: 70px;
                 border: none;
                 color: $text;
+                background-color: #fff;
                 &:active {
                     color: #000;
                 }
@@ -220,9 +221,9 @@
 .doors__show {
     display: flex;
     justify-content: center;     
-    
+    padding-left: 50px;
     &-main {
-        padding-right: 100px;
+        padding-right: 50px;
         &-img {
             img {
                 height: 500px;
@@ -248,7 +249,8 @@
 }
 
 .recommend {
-    height: 600px;
+    padding-top: 60px;
+    height: 700px;
     background-color: #f3f6f6;
     &__desc {
 
