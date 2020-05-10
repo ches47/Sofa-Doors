@@ -53,8 +53,12 @@
             color: $text;
         }
         span {
+            
             font-size: 30px;
             font-weight: 500;
+            a {
+                color: $text; 
+            }
         }
     }
     &-call {
@@ -174,4 +178,202 @@
             color: $text; 
         }
     }
+}
+
+//Video Door
+.video__doors {
+    height: 820px;
+    padding-bottom: 100px;
+    &-player {
+        width: auto;
+        height: 400px;
+    }
+}
+
+.trend {
+    padding-bottom: 120px;
+    &__doors {
+        
+        &-now-title{
+            font-size: 37px;
+            font-weight: 600;
+            text-align: center;
+            padding-bottom: 60px;
+        }
+        &-now-btn {
+            text-align: center;
+            font-size: 21px;
+            padding-bottom: 100px;
+            button {
+                margin-right: 70px;
+                border: none;
+                color: $text;
+                &:active {
+                    color: #000;
+                }
+            }
+
+        }
+    }
+}
+
+.doors__show {
+    display: flex;
+    justify-content: center;     
+    
+    &-main {
+        padding-right: 100px;
+        &-img {
+            img {
+                height: 500px;
+            }
+        }
+
+    }
+    &-desc {
+        padding-top: 30px;
+        text-align: center;
+        font-size: 20px;
+    }
+}
+
+.trend__doors-show-title{
+    padding-bottom: 20px;
+    font-weight: 600;
+}
+
+.trend__doors-show-price{
+    color: $text;
+    font-size: 18px;
+}
+
+.recommend {
+    height: 600px;
+    background-color: #f3f6f6;
+    &__desc {
+
+        &-title {
+            text-align: center;
+            font-size: 38px;
+            font-weight: 600;
+            padding-bottom: 100px;
+        }
+        &-button {
+            button {
+                    color: #fff;
+                    font-weight: 300;
+                    width: 320px;
+                    height: 60px;
+                    border: none;
+                    background-color: $dark-blue;
+                    border-top-left-radius: 0px;
+                    border-bottom-left-radius: 0px;
+                    text-transform: uppercase;
+                   
+                    .fa-arrow-right {
+                        margin-left: 80px;
+                    }
+            }
+        }
+    }
+}
+
+.recommend__desc-blocks {
+    display: flex;
+    justify-content: center;
+}
+
+.recommend__desc-block {
+    padding-right: 70px;
+    
+    &-img {
+        cursor: pointer;
+        position: relative;
+        .circle {
+            position: absolute;
+            top: 57px;
+            left: 110px;
+            width: 80px;
+            height: 80px;
+            background: white;
+            border-radius: 50px;
+            .trigle {
+                position: absolute;
+                top: 30px;
+                left: 33px;
+                border-top: 11px solid transparent;
+                border-left: 20px solid #343538;
+                border-bottom: 10px solid transparent;  
+            }
+        }
+    }
+
+    &-img:hover {
+        border-radius: 10%;
+        transition: 0.5s;
+        box-shadow: 0px -12px 12px 1px #acb3ba;
+    }
+    &-about {
+        text-align: center;
+        padding-bottom: 40px;
+    }
+}
+
+.recommend__desc-p {
+    color: $text;
+}
+
+.subscribe {
+    padding: 90px 0;
+    &__insta {
+        text-align: center;
+        width: 500px;
+        margin: 0 auto;
+        &-title {
+            font-size: 42px;
+            line-height: 48px;
+            font-weight: 400;
+        }
+        &-link {
+            padding: 20px 0; 
+            color: $text;
+            padding-right: 10px;   
+            i.fa-instagram {
+                font-size: 28px;
+            }
+        }
+        &-desc {
+            font-size: 18px;
+            line-height: 24px;
+            color: $text;
+            padding-bottom: 20px;   
+        }
+    }
+    &__images {
+        text-align: center; 
+        img {
+            margin-right: -5px;
+        }
+    }
+}
+
+.footer {
+    background-color: #1f1f1f;
+    height: 300px;
+    &__info {
+        padding-top: 70px;
+        color: white;
+        display: flex;
+       
+    }
+}
+
+
+
+
+.footer__politic {
+    padding-top: 30px;
+    border-top: 1px solid red;
+    height: 60px;
+    background-color: #1f1f1f;
 }
