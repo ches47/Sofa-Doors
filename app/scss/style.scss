@@ -676,3 +676,45 @@ i.fa-search:before{
 i.fa-arrow-right:before {
     margin-left: 98px;
 }
+
+.more__sorting {
+    padding: 30px; 
+    color:$text;
+    font-weight: 500;
+    font-size: 20px;
+    &-string {
+        display: flex;
+        justify-content: space-between;
+    }
+    &-string-main {
+        a {
+
+            span {
+                padding-right: 10px;
+                color: $text; 
+                .catalogy {
+                    padding-left: 10px;    
+                }
+            }
+ 
+        }
+    }
+    &-string-price {
+        span {
+            padding-right: 20px;   
+        }
+        input {
+            padding-left: 10px; 
+            height: 40px;            
+            &::placeholder {
+                color: #000;
+            }
+
+        }
+ 
+    }
+}
+
+i.fas.fa-caret-right {
+    padding-right: 10px;
+}
