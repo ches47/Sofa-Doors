@@ -13,76 +13,134 @@
 </head>
 <body>
     <header class="header">
-      <div class="header__top">
-        <div class="container">
-          <div class="header__top-inner"> 
-            <div class="header__logo">
-                <a href="#">
-                    <img src="img/furniture-company.jpg" alt="logo_sofa" width="250px">
-                </a>
-            </div>
-
-            <div class="header__input">
-                <input type="text" placeholder="Введите название" required>
-                <div class="header__input-btn">
-                   <button type="submit">Поиск</button>    
-                </div>   
-            </div>
-            <div class="header__box"> 
-             <div class="header__btn">
-                <a class="basket header__circle" href="#">
-                    <i class="fas fa-shopping-basket"></i>         
-                </a>
-             </div>
-             <div class="header__contact">
-                <div class="header__contact-tel">
-                    <i class="fas fa-phone-volume"></i>
-                    <span><a href="tel:+78142332211">+7(814)-233-22-11</a></span>
-                </div>
-                <div class="header__contact-call">
-                    Звоните с 09:00 до 21:00.
-                    <span>Закажите обратный звонок</span>         
-                </div>
-             </div>
-          </div>   
-        </div>  
-       </div>       
-      </div> 
-      
-      <div class="header__menu">
+        <div class="header__top">
           <div class="container">
-              <nav class="menu">
-                <ul class="menu__list">
-                    <li>
-                        <a href="#">О нас</a>
-                    </li>
-                    <li>
-                        <a href="#">Каталог</a>
-                    </li>
-                    <li>
-                        <a href="#">Статьи</a>
-                    </li>
-                    <li>
-                        <a href="#">Фото</a>
-                    </li>
-                    <li>
-                        <a href="#">Где купить</a>
-                    </li>
-                    <li>
-                        <a href="#">Дизайнеры</a>
-                    </li>
-                    <li>
-                        <a href="#">FAQ</a>
-                    </li>
-                    <li>
-                        <a href="#">Контакты</a>
-                    </li>
-                </ul>   
-              </nav>
-          </div>       
-      </div>
-    
+            <div class="header__top-inner"> 
+              <div class="header__logo">
+                  <a href="#">
+                      <img src="img/furniture-company.jpg" alt="logo_sofa" width="250px">
+                  </a>
+                  <div>Официальный сайт фабрики</div> 
+                 
+              </div>
+  
+              <div class="header__input">
+                  <input type="text" placeholder="Введите название" required>
+                  <div class="header__input-btn">
+                     <button type="submit">Поиск</button>    
+                  </div>   
+              </div>
+              <div class="header__box"> 
+               <div class="header__btn">
+                  <a class="basket header__circle" href="#">
+                      <i class="fas fa-shopping-basket"></i>         
+                  </a>
+               </div>
+               <div class="header__contact">
+                  <div class="header__contact-tel">
+                      <i class="fas fa-phone-volume"></i>
+                      <span><a href="tel:+78142332211">+7(814)-233-22-11</a></span>
+                  </div>
+                  <div class="header__contact-call">
+                      Звоните с 09:00 до 21:00.
+                      <span>Закажите обратный звонок</span>         
+                  </div>
+               </div>
+            </div>   
+          </div>  
+         </div>       
+        </div> 
+        
+        <div class="header__menu">
+            <div class="container">
+                <nav class="menu">
+                  <ul class="menu__list">
+                      <li class="menu__list-li">
+                          <a class="menu__list-a" href="#">О нас</a>
+                      </li>
+                      <li class="header__drop-down drop-down menu__list-li">
+                          <a class="drop-down__link menu__list-a" href="#">Каталог</a>
+                          <ul class="drop-down__list">
+                              <li class="title">Каталог<span>54 673 товаров</span></li>
+                              <div class="line"></div>
+  
+                            <div class="catalog__doors">     
+                              <ul class="catalog_list">
+          
+                                  <li><a class="catalog__list-a" href="#">Межкомнатные двери</a></li>
+                                  <li><a class="catalog__list-a" href="#">Входные двери</a></li>
+                                  <li><a class="catalog__list-a" href="#">Стекляные двери</a></li>
+                                  <li><a class="catalog__list-a" href="#">Раздвижные системы</a></li>
+                                  <li><a class="catalog__list-a" href="#">Межкомнатные перегородки</a></li>
+                                  <li><a class="catalog__list-a" href="#">Паркетная доска</a></li>
+                              </ul> 
+                              <ul class="catalog_list-second">   
+                                  
+                                  <li><a class="catalog__list-a" href="#">Фарнитура</a></li>
+                                  <li><a class="catalog__list-a" href="#">Погонаж и плинтус</a></li>
+                                  <li><a class="catalog__list-a" href="#">Скрытая дверь</a></li>
+                                  <li><a class="catalog__list-a" href="#">Потолочно-стеновые панели</a></li>
+                                  <li><a class="catalog__list-a" href="#">Пожароустойчивые двери</a></li> 
+                              </ul> 
+                          </div>   
+                              
+                          </ul>
+                      </li>
+                      <li class="menu__list-li">
+                          <a class="menu__list-a" href="#">Статьи</a>
+                      </li>
+                      <li class="menu__list-li">
+                          <a class="menu__list-a" href="#">Фото</a>
+                      </li>
+                      <li class="menu__list-li">
+                          <a class="menu__list-a" href="#">Где купить</a>
+                      </li>
+                      <li class="menu__list-li">
+                          <a class="menu__list-a" href="#">Дизайнеры</a>
+                      </li>
+                      <li class="menu__list-li">
+                          <a class="menu__list-a" href="#">FAQ</a>
+                      </li>
+                      <li class="menu__list-li">
+                          <a class="menu__list-a" href="#">Контакты</a>
+                      </li>
+                  </ul>   
+                </nav>
+            </div>       
+        </div>
+      
     </header>
+    <section class="more">
+
+        <div class="more__img">
+            <img src="img/category/category-pic.jpg" alt="door_more">
+            <div class="more__search">              
+                <input type="search" placeholder="У вас есть вопросы? Задавайте!">
+                <i class="fas fa-search"></i>
+            </div>    
+        </div>
+
+        <div class="more__info">
+            <div class="more__info-about">
+                <div class="more__info-about-text">
+                    <p>Что у нас есть</p>
+                </div>
+                <div class="more__info-about-title">
+                    <h2>Двери Входные</h2>
+                </div>
+                <div class="more__info-about-desc">
+                    Украинский производитель комплексных интерьерных решений
+                    "Company Home" для обустройтсва дома: межкомнатные и входные двери,
+                    потолочно-стеновые панели, сдвижные перегородки системы
+                </div>
+                <div class="more__info-about-btn">
+                    <button type="submit">УЗНАТЬ БОЛЬШЕ
+                        <i class="fas fa-arrow-right"></i>
+                    </button>
+                </div>
+            </div>
+        </div>
+    </section>
 
 
 
@@ -93,7 +151,7 @@
 
 
 
-    <footer class="footer">
+    <!-- <footer class="footer">
         <div class="container">
 
             <div class="footer__info">
@@ -145,21 +203,7 @@
             </div> 
         </div>  
         </div>  
-    </footer>
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
+    </footer> -->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
     <script src="js/libs.min.js"></script>
     <script src="js/main.min.js"></script>
