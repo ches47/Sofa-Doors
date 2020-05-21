@@ -718,3 +718,77 @@ i.fa-arrow-right:before {
 i.fas.fa-caret-right {
     padding-right: 10px;
 }
+
+.content {
+    background-color: $light-gray;
+}
+
+.charact {
+    padding-top: 40px; 
+}
+
+.block__color {
+    max-width: 290px;
+    padding-bottom: 70px;   
+    &-choice {
+        display: flex;
+        justify-content: space-between;
+        // margin-left: 40px;
+        color: $text;
+        font-size: 24px;
+        font-weight: 600;  
+        padding-bottom: 20px;   
+        border-bottom: 1px solid #c8c9cf;
+        span {
+            margin-top: 10px;
+            width: 20px;
+            height: 3px;
+            background-color: $text;
+        }
+    }
+    &-circle {
+        padding-right: 40px;
+        padding-top: 40px; 
+        display: flex;
+        justify-content: flex-end;
+        flex-wrap: wrap;
+
+        .circle {
+            margin-left: 42px;
+            margin-bottom: 40px;    
+            background-color: black;
+            border-radius: 50%;
+            width: 20px;
+            cursor: pointer;
+            height: 20px;
+            &-blue {
+                background-color: #7faadb;
+            } 
+            &-orange {
+                background-color: #fe7865;
+            }
+            &-light {
+                background-color: #9ce0d8;
+            }
+            &-yellow {
+                background-color: #ffb585;
+            }
+            &-green {
+                background-color: #b0e2bb;
+            }
+            &-violet {
+                background-color: #bfadef;
+            }
+            &-red {
+                background-color: #ff8e9c;
+            }
+            &-pink {
+                background-color: #fcbdda;
+            }
+        }   
+        .circle:nth-child(1) {
+            margin-left: 0;
+        }
+    }
+}  
+
