@@ -1139,3 +1139,70 @@ span.irs-handle.to.type_last {
         }
     }
 }
+
+.news {
+    padding: 20px 0 60px 0;
+
+    &__title {
+        font-size: 42px;
+        font-weight: 600;
+    }
+    &__text {
+        padding: 40px 0;
+        color: $text;
+        font-size: 20px;
+    }
+
+    &__block{
+        display: flex;
+        flex-wrap: wrap;
+        &-date {
+            color: $text;
+            padding: 20px 0;
+        }
+        &-text {
+            font-size: 29px;
+            line-height: 39px;
+        }
+    }
+    &__info {
+        padding: 20px 110px 40px 0;
+    }
+
+    .subscribe {
+        display: flex;
+        justify-content: start;
+
+        padding-left: 50px;
+        &-title {
+            font-size: 32px;
+            line-height: 38px;
+            padding-right: 100px;
+        }
+        &-mail {
+
+            input {
+                border: none;
+                border-bottom: 1px solid $text;
+                background-color: inherit;
+                padding-bottom: 11px;
+                width: 300px;
+            }
+            button {
+                margin-left: 40px;
+
+                background-color: $red;
+                color: #fff;
+                width: 100px;
+                height: 40px;
+                border-radius: 6px;
+                border: none;
+            }
+        }
+    }
+
+}
+
+.news__four {
+    margin-top: -300px;
+}
