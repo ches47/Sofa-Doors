@@ -1125,6 +1125,7 @@ span.irs-handle.to.type_last {
                 background-color: inherit;
                 padding-bottom: 11px;
                 width: 300px;
+                padding-bottom: 5px;
             }
             button {
                 margin-left: 40px;
@@ -1187,6 +1188,7 @@ span.irs-handle.to.type_last {
                 background-color: inherit;
                 padding-bottom: 11px;
                 width: 300px;
+                padding-bottom: 5px;
             }
             button {
                 margin-left: 40px;
@@ -1205,4 +1207,107 @@ span.irs-handle.to.type_last {
 
 .news__four {
     margin-top: -300px;
+}
+
+
+//combination
+.combination {
+    margin: 0 0 50px 200px;
+
+    &-block {
+
+        h1 {
+            font-size: 63px;
+            line-height: 65px;
+            font-weight: 300;
+        }
+
+    }
+
+    &-about {
+        margin-top: 30px;
+        display: flex;
+        &__info {
+           &--block {
+            padding-bottom: 5px;
+            line-height: 22px;
+            .category {
+                color: $text; 
+                font-size: 18px; 
+            } 
+            .name {
+                color: #000;
+                font-size: 19px; 
+             }    
+            }  
+           &--data {
+            margin-top: -12px;
+            line-height: 17px;
+               .data {
+                    color: $text; 
+                    font-size: 18px; 
+                } 
+                .numbers {
+                    color: #000;
+                    font-size: 19px; 
+                 } 
+           } 
+        }  
+        
+        
+
+        &__text {
+            margin-left: 100px;
+            width: 650px;
+            margin-top: -18px;
+
+            h2 {
+                font-size: 33px;
+                font-weight: 500;
+            }
+
+            p {
+                color: $text;
+            }
+        }
+    }
+}
+
+
+.slider {
+
+    .subscribe {
+        display: flex;
+        justify-content: start;
+
+        padding-left: 50px;
+        &-title {
+            font-size: 32px;
+            line-height: 38px;
+            padding-right: 100px;
+        }
+        &-mail {
+
+            input {
+                border: none;
+                border-bottom: 1px solid $text;
+                background-color: inherit;
+                padding-bottom: 11px;
+                width: 300px;
+                padding-bottom: 5px;
+            }
+
+            button {
+                margin-left: 40px;
+
+                background-color: $red;
+                color: #fff;
+                width: 100px;
+                height: 40px;
+                border-radius: 6px;
+                border: none;
+            }
+        }
+    }
+
 }
