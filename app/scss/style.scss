@@ -1278,7 +1278,7 @@ span.irs-handle.to.type_last {
 
     .subscribe {
         display: flex;
-        justify-content: start;
+        justify-content: center; 
 
         padding-left: 50px;
         &-title {
@@ -1307,6 +1307,56 @@ span.irs-handle.to.type_last {
                 border-radius: 6px;
                 border: none;
             }
+        }
+    }
+
+    &-slick {
+        .slick-dots {
+            display: flex;
+            justify-content: center;
+            padding-top: 30px;
+            li {
+                padding-right: 20px;
+            }
+        }
+
+        button#slick-slide-control00,
+        button#slick-slide-control01,
+        button#slick-slide-control02,
+        button#slick-slide-control03 {
+            width: 20px;
+            height: 17px;
+            border-radius: 50%;
+            border: none;
+            background-color:  $dark-blue;
+        }
+
+
+        .img1 {
+            position: relative; 
+            .block {
+                position: absolute;
+                top: 0;
+                left: 100px;
+                width: 200px;
+                height: 65px;
+                background-color: $dark-blue;
+                color: #fff;  
+                text-align: center; 
+                font-weight: 300;
+                &::after {
+                    content: '01';
+                    padding-top: 16px;
+                    position: absolute;
+                    bottom: -135px;
+                    right: 219px;
+                    width: 80px;
+                    height: 55px;
+                    background-color: $dark-blue;
+                    color: #fff;   
+                    font-weight: 300;   
+                }
+            }   
         }
     }
 
