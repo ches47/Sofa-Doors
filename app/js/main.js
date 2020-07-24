@@ -39,6 +39,17 @@ $(function(){
       });
 
 
+    $('.project-slider__slick-img').slick({
+    dots: false,
+    infinite: true,
+    speed: 300,
+    slidesToShow: 1,
+    adaptiveHeight: false,
+    prevArrow: '<i class="fas fa-long-arrow-alt-left"></i>',
+    nextArrow: '<i class="fas fa-long-arrow-alt-right"></i>'
+    });   
+
+
     
 
 });

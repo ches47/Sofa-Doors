@@ -1329,12 +1329,15 @@ span.irs-handle.to.type_last {
             border-radius: 50%;
             border: none;
             background-color:  $dark-blue;
+            
         }
 
 
         .img1 {
             position: relative; 
+            
             .block {
+                display: block;
                 position: absolute;
                 top: 0;
                 left: 100px;
@@ -1344,6 +1347,9 @@ span.irs-handle.to.type_last {
                 color: #fff;  
                 text-align: center; 
                 font-weight: 300;
+                &:hover {
+                    display: block;
+                }
                 &::after {
                     content: '01';
                     padding-top: 16px;
@@ -1361,3 +1367,187 @@ span.irs-handle.to.type_last {
     }
 
 }
+
+
+.project {
+    &-slider {
+        &__title {
+            text-align: center;
+            h2 {
+                font-size: 42px;
+                line-height: 14px;
+                font-weight: 600;
+                color: $dark-blue;   
+            }
+        }
+  
+    &__slick {
+        position: relative;
+        
+        &::after {
+            content: '';
+            position: absolute;
+            bottom: 31px;
+            z-index: 3;
+            width: 160px;
+            height: 50px;
+            background-color: #afc8e2;
+        }
+        .fa-long-arrow-alt-left:before {
+            position: absolute;
+            bottom: 43px;
+            left: 38px;
+            font-size: 22px;
+            z-index: 4;
+            cursor: pointer;
+        }  
+        .fa-long-arrow-alt-right:before {
+            position: absolute;
+            bottom: 43px;
+            left: 106px;
+            font-size: 22px;
+            z-index: 4; 
+            cursor: pointer;
+        }
+    }
+
+}
+
+    &-desc {
+        display: flex;
+        justify-content: space-between;
+        &__about {
+            padding-top: 60px;
+            min-width: 200px;
+            line-height: 18px;
+            .prof {
+                font-size: 20px;
+                color: $text;
+            }
+            .name {
+                font-size: 24px;
+                color: #000;
+            }
+            .place {
+                padding-top: 20px;
+            }
+            .city {
+                font-size: 20px;
+                color: $text;
+            }
+            .name-city {
+                font-size: 24px;
+                color: #000;
+            }
+        }
+        &__text {
+            max-width: 900px;   
+            h2 {
+                font-size: 46px;
+                line-height: 32px;
+                font-weight: 400;
+            } 
+            p.text {
+                font-size: 22px;
+                color: $text;
+                line-height: 31px;
+            }
+        }
+    }
+    &-product {
+        .in-product {
+            text-align: center;
+            font-size: 40px;
+            line-height: 32px;
+            font-weight: 400;
+        }
+        &__doors {
+            display: flex;
+            justify-content: center;
+            position: relative;
+
+            img {
+                margin-left: 60px;
+            }
+            .block {
+                width: 226px;
+                height: 65px;
+                color: #fff;
+                text-align: center;
+                background-color: #1d2539;
+                font-size: 17px;
+                font-weight: 500;
+            }
+            .doors-block1 {
+                position: absolute;
+                bottom: 7px;
+                left: 246px;
+            }
+            .doors-block2 {
+                position: absolute;
+                bottom: 7px;
+                left: 503px;
+            }
+            .doors-block3 {
+                position: absolute;
+                bottom: 7px;
+                right: 188px;
+            }
+
+        }
+    }
+    
+
+
+
+    .subscribe {
+        display: flex;
+        justify-content: center;
+
+        padding-left: 50px;
+        &-title {
+            font-size: 32px;
+            line-height: 38px;
+            padding-right: 100px;
+        }
+        &-mail {
+
+            input {
+                border: none;
+                border-bottom: 1px solid $text;
+                background-color: inherit;
+                padding-bottom: 11px;
+                width: 300px;
+                padding-bottom: 5px;
+            }
+            button {
+                margin-left: 40px;
+
+                background-color: $red;
+                color: #fff;
+                width: 100px;
+                height: 40px;
+                border-radius: 6px;
+                border: none;
+            }
+        }
+    }
+  
+}
+
+// если не надо удали
+ // .slick-prev{
+        //     z-index: 3;
+        //    position: absolute;
+        //    bottom: 6px;
+        //    width: 85px;
+        //    height: 45px;
+        // }
+        // .slick-next{
+        //    position: absolute;
+        //    bottom: 6px;
+        //    left: 71px;
+        //    width: 85px;
+        //    height: 45px;
+        //    content: '>';
+        // }
