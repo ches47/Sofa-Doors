@@ -49,6 +49,14 @@ $(function(){
     nextArrow: '<i class="fas fa-long-arrow-alt-right"></i>'
     });   
 
+    $('.design-proffesional__img').slick({
+        vertical: true,
+        verticalSwiping: true,
+        slidesToShow: 1,
+        autoplay: false,
+        prevArrow: '<i class="fas fa-angle-up"></i>',
+        nextArrow: '<i class="fas fa-angle-down"></i>'
+    });
 
     
 
