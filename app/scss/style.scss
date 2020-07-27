@@ -721,6 +721,41 @@ i.fas.fa-caret-right {
 
 .content {
     background-color: $light-gray;
+    .subscribe {
+        display: flex;
+        justify-content: center;
+
+        padding-left: 50px;
+        &-title {
+            font-size: 32px;
+            line-height: 38px;
+            padding-right: 100px;
+        }
+        &-mail {
+
+            input {
+                border: none;
+                border-bottom: 1px solid $text;
+                background-color: inherit;
+                padding-bottom: 11px;
+                width: 300px;
+                padding-bottom: 5px;
+            }
+            button {
+                margin-left: 40px;
+
+                background-color: $red;
+                color: #fff;
+                width: 100px;
+                height: 40px;
+                border-radius: 6px;
+                border: none;
+            }
+        }
+    }
+    .subscribe__padding {
+        padding-bottom: 90px;
+    }
 }
 
 .charact {
@@ -1107,38 +1142,7 @@ span.irs-handle.to.type_last {
             }
         }
     }
-    .subscribe {
-        display: flex;
-        justify-content: start;
-
-        padding-left: 50px;
-        &-title {
-            font-size: 32px;
-            line-height: 38px;
-            padding-right: 100px;
-        }
-        &-mail {
-
-            input {
-                border: none;
-                border-bottom: 1px solid $text;
-                background-color: inherit;
-                padding-bottom: 11px;
-                width: 300px;
-                padding-bottom: 5px;
-            }
-            button {
-                margin-left: 40px;
-
-                background-color: $red;
-                color: #fff;
-                width: 100px;
-                height: 40px;
-                border-radius: 6px;
-                border: none;
-            }
-        }
-    }
+    
 }
 
 .news {
@@ -1172,7 +1176,7 @@ span.irs-handle.to.type_last {
 
     .subscribe {
         display: flex;
-        justify-content: start;
+        justify-content: center;
 
         padding-left: 50px;
         &-title {
@@ -1651,4 +1655,138 @@ span.irs-handle.to.type_last {
             }
         }
     }
+}
+
+.questions {
+    padding-bottom: 50px;
+    &-title {
+        font-size: 45px;
+        font-weight: 400;
+        padding-bottom: 10px;
+    }
+    &-chat {
+        display: flex;
+        flex-wrap: wrap;    
+    }
+    &-block {
+        max-width: 720px;
+        height: 200px;
+        background-color: $blue;
+        border-radius: 7px;
+        box-shadow: 0 1px 69px rgba(0,0,0,0.26);
+        padding: 30px;
+        &__user {
+            font-size: 24px;
+            font-weight: 600;
+        }
+        &__text {
+            max-width: 600px;
+        }
+    }
+    &-block2 {
+        max-width: 720px;
+        height: 200px;
+        background-color: $dark-blue;   
+        border-radius: 10px;
+        padding: 30px;
+        margin: 50px 150px;
+        &__user {
+            font-size: 24px;
+            font-weight: 600;
+            color: #fff;
+        }
+        &__text {
+            max-width: 600px;
+            color: $text;
+        }
+    }
+}
+
+.write {
+    background-color: #f6f8f8;
+    padding: 30px 0;   
+    &-title {
+        font-size: 27px;
+    }
+    form {
+        padding-bottom: 40px;
+       .write-data {
+          padding-bottom: 30px;
+          .inputBox {
+              font-size: 16px;
+              font-weight: 600;
+              display: flex;
+              text-transform: uppercase;
+          }
+          .inputBox__name {
+              margin-right: 50px;
+
+          }
+          input {
+            border-radius: 6px;
+              width: 470px;
+              height: 52px;
+              border: 2px solid $text;
+              padding-left: 20px;
+            }
+        } 
+        .write-question {
+            margin-bottom: 30px;
+            p {
+                font-size: 16px;
+                font-weight: 600;
+                text-transform: uppercase;
+            }
+            textarea {
+                width: 85%; 
+                min-height: 200px;
+                border: 2px solid $text;
+                padding: 20px;
+                resize: none;
+                border-radius: 6px;
+            }
+        }
+        button.button-sub {
+            min-width: 300px;
+            height: 40px;
+            color: #fff;
+            background-color: $dark-blue;
+            text-transform: uppercase;
+            border: none;
+            border-radius: 6px;
+        }
+    }
+    .subscribe {
+        display: flex;
+        justify-content: center;
+
+        padding-left: 50px;
+        &-title {
+            font-size: 32px;
+            line-height: 38px;
+            padding-right: 100px;
+        }
+        &-mail {
+
+            input {
+                border: none;
+                border-bottom: 1px solid $text;
+                background-color: inherit;
+                padding-bottom: 11px;
+                width: 300px;
+                padding-bottom: 5px;
+            }
+            button {
+                margin-left: 40px;
+
+                background-color: $red;
+                color: #fff;
+                width: 100px;
+                height: 40px;
+                border-radius: 6px;
+                border: none;
+            }
+        }
+    }
+
 }
