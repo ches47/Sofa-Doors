@@ -1904,60 +1904,71 @@ span.irs-handle.to.type_last {
 }
 
 .production {
-    display: inline;
+    display: flex;
     justify-content: center;
+    position: relative;
     
     &__content {
         max-width: 250px;
-        &-title{
+        
+        h2{
             font-size: 36px;
             line-height: 42px;
-            padding-bottom: 30px;
         }
-        &-text {
+        p {
             color: $text;
             font-size: 18px;
             line-height: 32px;
-            padding-bottom: 30px;
         }
-        &-slick {
-            position: relative;
-
-            width: 150px;
-            height: 50px;
-            background-color: #afc8e2; 
-            .fas {
-                position: absolute;
-                cursor: pointer;
-                font-size: 22px;
-            }   
-            .fa-long-arrow-alt-left {
-                top: 15px;
-                left: 35px;
-            }
-
-            .fa-long-arrow-alt-right {
-                position: absolute;
-                top: 15px;
-                right: 40px;
-            }
+      
+        i.fas.fa-long-arrow-alt-left.slick-arrow{
+            position: absolute;
+            bottom: -20px;
+            left: 20px;
+            font-size: 25px;
+            cursor: pointer;
         }
+        i.fas.fa-long-arrow-alt-right.slick-arrow{
+            position: absolute;
+            bottom: -20px;
+            left: 120px;
+            font-size: 25px;
+            cursor: pointer;
+        }
+        
+
         &-images {
            display: flex;  
-           
-           img {
+           padding-left: 100px;
+           .content-image {
                padding-left: 40px;
+               position: relative;
+           }
+           img {
                width: 250px;
            }
-           img:nth-child(1) {
-               padding-left: 0px;    
+           .block {
+               cursor: pointer;
+               color: #fff;    
+               position: absolute;
+               right: -9px;
+               bottom: -36px;
+               width: 270px;
+               height: 70px;
+               background-color: $light-blue;
+               text-align: center;
+               font-weight: 300;
+               &:hover {
+                   background-color: $red;
+                   transition: 0.5s;
+               }
            }
         }
          
     }
 }
 
-.DesignProject {
+.designProduct {
     margin-top: 100px;
-    margin-bottom: 100px;
+    margin-bottom: 200px;
 }

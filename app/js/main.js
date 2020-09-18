@@ -58,6 +58,10 @@ $(function(){
         nextArrow: '<i class="fas fa-angle-down"></i>'
     });
 
+    $('.production__content-desc').slick({
+      prevArrow: '<i class="fas fa-long-arrow-alt-left"></i>',
+      nextArrow: '<i class="fas fa-long-arrow-alt-right"></i>'
+    });
     
 
 });
