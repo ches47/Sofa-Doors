@@ -2011,3 +2011,42 @@ span.irs-handle.to.type_last {
         }
     }
 }
+
+.dontFound {
+    padding: 50px 0 150px 0;
+    &__main {
+        text-align: center;
+        &-404 {
+            font-size: 24px;
+        }
+        &-img {
+            max-height: 400px;
+            img {
+                max-height: 389px;
+                margin-top: -50px;
+            }
+        }
+        &-text {
+            color: $text;   
+            padding-bottom: 50px; 
+        }
+        &-btn {
+            button {
+                min-width: 300px;
+                background-color: $dark-blue;
+                height: 40px;
+                font-weight: 600;
+                line-height: 30px;
+                text-transform: uppercase;
+                color: #fff;  
+                border: none;  
+                border-radius: 4px;
+                &:hover {
+                    background-color: $red;
+                    transition: 0.5s;
+                }
+            }
+        }
+    }
+}
+
