@@ -62,6 +62,19 @@ $(function(){
       prevArrow: '<i class="fas fa-long-arrow-alt-left"></i>',
       nextArrow: '<i class="fas fa-long-arrow-alt-right"></i>'
     });
+
+    $('.set__show').slick({
+      vertical: true,
+      arrows: false,
+      dots: true,
+      verticalSwiping: true,
+      slidesToScroll: 1,
+      slidesToShow: 1,
+      infinite: false,
+      adaptiveHeight: true,
+    });
+    
     
 
 });
+

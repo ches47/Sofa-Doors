@@ -2446,21 +2446,63 @@ span.irs-handle.to.type_last {
             }
         }
    }  
-   
- } 
-    
-
-  
- 
-
-
-
+} 
 
 .set {
+    &__block {
+        display: flex;
+        padding-bottom: 50px;
+    }
 
     h1{
         font-size: 62px;
         font-weight: 400;
         
     }
+    &__show {
+        width: 600px;
+        padding-top: 20px;
+        padding-bottom: 50px;
+        background-color: #e4e4e7;
+        position: relative;  
+        &-img {
+            img {
+                width: 310px; 
+                height: 750px;
+                margin-left: 25%;   
+            }
+       
+        }  
+    }
+    ul.slick-dots {
+        position: absolute;
+        top: 50%;
+        left: 50px;
+        li {
+            padding-bottom: 10px;
+        }
+        button {
+            width: 10px;
+            height: 10px;
+            background: gray;
+            border-radius: 50%;
+            border: none;
+            
+            font-size: 0;  
+        }
+        .slick-active {
+            button {
+                width: 15px;
+                height: 15px;
+                background: $dark-blue;
+                margin-left: -1px;
+                &:hover {
+                    // display: none;
+                }
+            }      
+        }
+
+    }
+   
+    
 }
