@@ -2586,21 +2586,28 @@ span.irs-handle.to.type_last {
             color: $text;
             font-size: 18px;
             font-weight: 600;
-            li {
+            .tab {
                     cursor: pointer;
-                    padding-right: 65px;
+                    margin-right: 65px;
                     &:hover {
                         color: #000;
                         transition: 0.5s;
-                        
                     }    
+                   
                 }
+
             }  
+            .tab-item {
+                display: none;
+                    &:first-child {
+                display: block;
+                    }
+                }
         }
     }
 
 .detail {
-    padding: 100px 0;
+    padding: 100px 0 0 0;
     &__desc {
         display: flex;
         padding-bottom: 80px;    

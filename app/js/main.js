@@ -75,12 +75,13 @@ $(function(){
     });
 
     
-    // $('.detail__model-img').slick({
-    //   slidesToShow: 3,
-    //   slidesToScroll: 1,
-    //   autoplay: true,
-    //   autoplaySpeed: 2000,
-    // });
-
+    $('.set__switch .tab').on('click', function(event) {
+      var id = $(this).attr('data-id');
+        $('.set__switch').find('.tab-item').removeClass('active-tab').hide();
+        $('.set__switch .tabs').find('.tab').removeClass('active');
+        $(this).addClass('active');
+        $('#'+id).addClass('active-tab').fadeIn();
+        return false;
+      });
 });
 
