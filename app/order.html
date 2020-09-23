@@ -14,6 +14,7 @@
     <link rel="stylesheet" href="css/style.min.css">
 </head>
 <body>
+
     <header class="header">
         <div class="header__top">
           <div class="container">
@@ -112,6 +113,7 @@
         </div>
       
     </header>
+
     <div class="more__sorting">
         <div class="container">
             <div class="more__sorting-string">
@@ -126,7 +128,8 @@
 
             </div>
         </div>
-    </div> 
+    </div>
+
     <section class="order">
         <div class="container">
             <h1>Оформление заказа</h1>
@@ -221,7 +224,9 @@
                     <span>Email</span><br/>
                     <input type="text" placeholder="doors@gmail.com">
                 </div>
-                <div class="order__table-contacts--btn">
+
+                <div class="order__table-contacts--btn" data-fancybox data-animation-duration="700"
+                 data-src="#animatedModal" href="javascript:;">
                     <button type="button">Сформировать заказ</button>
                 </div>
             </div> 
@@ -284,7 +289,28 @@
             </div> 
         </div>  
         </div>  
-    </footer>    
+    </footer>   
+    
+    <div id="animatedModal">
+        <div class="modal">
+            <div class="modal__logo">
+                <img src="img/furniture-company.jpg" alt="logo" width="200px">
+            </div>
+            <div class="modal__text">
+                <div class="modal__order">
+                    ВАШ ЗАКАЗ №777
+                </div>
+                <div class="modal__okay">
+                    ВАШ ЗАКАЗ ПРИНЯТ! <br>
+                    СКОРО С ВАМИ <br>
+                    СВЯЖЕТСЯ МЕНЕДЖЕР :)
+                </div>
+                <div class="modal__btn">
+                    <button type="submit">OK</button>
+                </div>
+            </div>
+        </div>            
+    </div> 
     
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
     
