@@ -2900,3 +2900,87 @@ span.irs-handle.to.type_last {
         }
     }
 }
+
+#modal__popup {
+    border-radius: 10px;
+}
+
+.popup {
+    width: 800px;
+    padding: 20px 40px;
+    &__about {
+        display: flex;    
+        &-img {
+            img {
+                width: 250px;
+                height: 550px;
+            }
+        }
+
+        &-text {
+            padding-left: 60px;
+            padding-top: 60px;
+            &--price {
+                font-size: 24px;
+                color: $red;
+            }
+            &--title {
+                font-size: 28px;
+                font-weight: 400;
+                line-height: 60px;
+            }
+            &--material {
+                ul {
+                    color: $text;
+                    font-size: 16px;
+                    font-weight: 600;
+                    li {
+                        cursor: pointer;
+                        padding-bottom: 14px;
+                        width: 100px;
+                        &:hover {
+                            color: #000;
+                            transition: 0.5s;
+
+                        }
+                    }
+                }
+            }
+        }
+    }
+    &__constructor {
+        padding: 50px 0 50px 0;
+        border-bottom: 1px solid #e7e5e3;
+        &-title {
+            text-align: center;
+            h2 {
+                font-size: 36px;
+                font-weight: 400;
+            }
+            &--info {
+                .push  {
+                    color: $red;
+                    font-weight: 600;
+                    font-size: 21px;
+                    padding-bottom: 50px;   
+                    img {
+                        width:22px; 
+                        height:16px; 
+                    }
+                }
+            }
+        }
+        &-image {
+            text-align: center;
+            padding-bottom: 100px;
+            img {
+                width: 250px;
+                height: 550px;
+            }
+        }
+        &-text {
+            font-size: 16px;
+            color: $text;
+        }
+    }
+}

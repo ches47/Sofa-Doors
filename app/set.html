@@ -14,7 +14,8 @@
     <link rel="stylesheet" href="css/style.min.css">
 </head>
 <body>
-    <header class="header">
+
+    <!-- <header class="header">
         <div class="header__top">
           <div class="container">
             <div class="header__top-inner"> 
@@ -128,7 +129,7 @@
 
             </div>
         </div>
-    </div> 
+    </div>  -->
     
     <section class="set">
 
@@ -155,7 +156,7 @@
             </div>
 
             <div class="set__complete">
-                <div class="set__complete-link">
+                <div class="set__complete-link" data-fancybox data-src="#modal__popup" href="javascript:;">
                     <a href="#">Подробный комплект</a>
                   </div>
                   <div class="set__complete-price">
@@ -370,20 +371,6 @@
 
     </section> 
 
-    <section class="detail">
-        <div class="container">
-
-            
-
-            
-            
-
-           
-            
-        </div>
-    </section>
-
-
      <footer class="footer">
         <div class="container">
 
@@ -437,6 +424,66 @@
         </div>  
         </div>  
     </footer> 
+
+    <div id="modal__popup">
+        <div class="popup">
+
+            <div class="popup__logo">
+                <img src="img/furniture-company.jpg" alt="logo" width="200px">
+            </div>
+
+            <div class="popup__about">
+                <div class="popup__about-img">
+                    <img src="img/doors/1.jpg" alt="doors">
+                </div>
+                <div class="popup__about-text">
+                    <div class="popup__about-text--price">
+                        от 7.000 грн
+                    </div>
+                    <div class="popup__about-text--title">
+                        <h2>Sofia Doors <br />
+                        Входная.</h2>
+                    </div>
+                    <div class="popup__about-text--material">
+                       <ul>
+                            <li class="active">Размер</li>
+                            <li>Стекло</li>
+                            <li>Наличник</li>
+                            <li>Петли</li>
+                            <li>Лак</li>
+                            <li>Цвет ручки</li>
+                       </ul>
+                    </div> 
+
+                </div>
+            </div>
+
+            <div class="popup__constructor">
+                <div class="popup__constructor-title">
+                    <h2>Конструктор двери</h2>
+                    <div class="popup__constructor-title--info">
+                        <div class="push">
+                            <img src="img/set/popup/push.png" alt="">
+                            Нажимайте для подробной информации
+                        </div>
+                    </div>
+                </div>
+
+                <div class="popup__constructor-image">
+                    <img src="img/doors/1.jpg" alt="doors">
+                </div>
+
+                <div class="popup__constructor-text">
+                    Lorem ipsum dolor sit amet  consecteturconsectetur, 
+                    adipisicing elit. Voluptates dolorem corporis odio architecto officia, in quia perferendis maiores voluptatum sapiente hic eos exercitationem modi nemo eveniet itaque velit distinctio? Hic expedita voluptates odit ducimus error excepturi illo aspernatur possimus dolorum aut,
+                    dolorem, deleniti laboriosam qui obcaecati commodi voluptatem odio!
+                    dolorem, deleniti laboriosam qui obcaecati commodi voluptatem odio!
+                    dolorem,  oati commodi voluptatem odio!
+                </div>
+            </div>
+
+        </div>
+    </div>
     
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
     
