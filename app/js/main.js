@@ -83,5 +83,13 @@ $(function(){
         $('#'+id).addClass('active-tab').fadeIn();
         return false;
       });
+
+
+    // Adaptive 
+    $('.menu__btn').on('click', function() {
+      $('.menu__list').slideToggle();  
+    });
+
+
 });
 

@@ -1,0 +1,160 @@
+@media(max-width: 1150px) {
+    .header__input {
+        display: none;
+    }
+
+     .menu .menu__list {
+        display: none;
+    }
+
+    .menu__btn {
+        display: block;
+        width: 30px;
+        cursor: pointer;
+        padding-top: 25px;
+        div {
+            background-color: #fff;
+            height: 3px;
+            & + div {
+                margin-top: 5px;
+            }
+        }
+    }
+
+    .footer {
+        flex-wrap: wrap;
+    }
+    .footer__info {
+        flex-wrap: wrap;
+    }
+    .footer__info-contact {
+        min-width: 100%;
+        padding-bottom: 50px;
+    }
+}
+
+@media(max-width: 800px) {
+    .header__logo img {
+        width: 140px;
+    }
+    .header__logo div {
+        font-size: 16px;
+    }
+    .header__top-inner {
+        padding-top: 20px;
+    }
+    .header__contact {
+        width: 200px;
+    }
+    .header__contact-call {
+        display: none;
+    }
+    .header__circle i.fa-shopping-basket {
+        font-size: 26px;
+    }
+    i.fas.fa-phone-volume {
+        font-size: 20px;
+    }
+    .header__contact-tel span {
+        font-size: 20px;
+    }
+    .header__contact-tel {
+        padding-top: 20px;
+    }
+    .header__circle {
+        left: -100px;
+    }
+
+    .footer__info-contact {
+        padding: 0 0 50px 50px;
+
+    }
+    .footer__info-contact-list {
+        padding: 0 45px 50px 50px;
+    }
+    .footer__info-contact-search {
+        margin: 0 50px 0 50px;
+    }
+    .footer__info-contact-social {
+        padding-left: 50px;
+        .title {
+            padding-bottom: 20px;
+        }
+        ul {
+            display: flex;
+            li {
+                padding-right: 40px;
+            }
+        }
+    }
+}    
+
+@media(max-width: 605px) {
+    .header__contact {
+        display: none;
+    }
+    .header__circle  {
+        top: -19px;
+        left: -80px;
+    }
+    .header__logo div {
+        font-size: 14px;
+    }
+    .footer__info-contact-search {
+        padding-bottom: 50px;
+    }
+    .footer__info-contact-social ul li {
+        padding-right: 10px;
+    }
+}
+
+@media(max-width: 500px) {
+
+    .footer__info-contact-search {
+        margin: 0;
+    }
+
+    .footer__info-contact-search input {
+        width: 220px;
+        margin: 0 0 50px 0;
+    }
+    .footer__info-contact-social {
+        padding-left: 0;
+    }
+    .footer__info-contact {
+        padding: 0 0 50px 0;
+
+    }
+    .footer__info-contact-list {
+        padding: 0 0 50px 0;
+    }
+    .footer__politic  {
+        padding-bottom: 30px;
+        line-height: 30px;
+       }
+    .footer__politic span {
+        padding-left: 0;
+    }
+
+}
+
+@media(max-width: 330px) { 
+   .footer__info-contact-search {
+       padding-bottom: 0;
+   }
+   
+
+}
+
+
+
+
+
+//MIN
+@media(min-width: 1150px) {
+       .menu {
+           .menu__list{
+              display: block !important;
+        }
+    } 
+}

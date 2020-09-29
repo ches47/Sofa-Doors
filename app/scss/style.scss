@@ -2,6 +2,7 @@
 @import '_global';
 @import '_fonts';
 
+
 .header__top-inner {
     display: flex;
     justify-content: space-between;
@@ -279,15 +280,14 @@ ul.catalog_list-second {
            
             button {
                 background-color: $dark-blue;
-                min-width: 320px;
+                min-width: 300px;
                 height: 60px;
                 color: #fff;
                 text-transform: uppercase;
                 font-size: 15px;
+                padding: 0px 20px;
                 border: none;
-               
                 i.fa-arrow-right {
-                    padding-left: 14px;
                     font-size: 20px;
                     
                 }
@@ -429,7 +429,7 @@ ul.catalog_list-second {
                     text-transform: uppercase;
                    
                     .fa-arrow-right {
-                        margin-left: 80px;
+                        margin-left: -60px;
                     }
             }
         }
@@ -517,7 +517,7 @@ ul.catalog_list-second {
 
 .footer {
     background-color: #1f1f1f;
-    height: 350px;
+    
     &__info {
         padding: 60px 0;
         color: white;
@@ -532,12 +532,15 @@ ul.catalog_list-second {
             line-height: 38px;
         }
         &-contact-search {
+            position: relative;
             .title {
                 font-size: 30px;
                 padding-bottom: 20px;
             }
             input {
-                width: 300px; 
+                
+                min-width: 100%; 
+                width: 300px;
                 height: 40px;
                 border-radius: 4px;
                 border: none; 
@@ -545,6 +548,10 @@ ul.catalog_list-second {
                 color: $text; 
             }
             button {
+                position: absolute;
+                top: 35px;
+                right: -4px;
+
                 margin-left: -9px;
                 margin-top: 9px;
                 color: #fff;
@@ -586,6 +593,10 @@ ul.catalog_list-second {
             }
         }
     }
+
+    .footer__col {
+        // min-width: 100%;
+    }
 }
 
 
@@ -594,7 +605,6 @@ ul.catalog_list-second {
 .footer__politic {
     padding-top: 30px;
     border-top: 1px solid #333;
-    height: 60px;
     background-color: #1f1f1f;
     color: $text;
     text-align: center;
@@ -744,6 +754,7 @@ i.fas.fa-caret-right {
                 background-color: inherit;
                 padding-bottom: 11px;
                 width: 300px;
+                height: 40px;
                 padding-bottom: 5px;
             }
             button {
@@ -1326,6 +1337,7 @@ span.irs-handle.to.type_last {
             padding-top: 30px;
             li {
                 padding-right: 20px;
+                font-size: 0;
             }
         }
 
@@ -2169,7 +2181,7 @@ span.irs-handle.to.type_last {
             padding-top: 50px;
             padding-left: 50px;
             input {
-                width: 30px;
+                width: 50px;
                 height: 30px;
                 padding-left: 10px;
                 border-radius: 4px;
@@ -2482,8 +2494,8 @@ span.irs-handle.to.type_last {
             padding-bottom: 10px;
         }
         button {
-            width: 10px;
-            height: 10px;
+            width: 11px;
+            height: 11px;
             background: gray;
             border-radius: 50%;
             border: none;
@@ -2496,10 +2508,24 @@ span.irs-handle.to.type_last {
                 height: 15px;
                 background: $dark-blue;
                 margin-left: -1px;
+                transition: 500ms;
                 &:hover {
                     // display: none;
                 }
             }      
+        }
+
+        #slick-slide-control00  {
+            background: $red;  
+        }
+         #slick-slide-control01 {
+            background: $blue;  
+        }
+        #slick-slide-control02  {
+            background: #b8becb;  
+        }
+         #slick-slide-control03 {
+            background: $yellow;  
         }
 
     }
@@ -2533,6 +2559,7 @@ span.irs-handle.to.type_last {
         }
         &-color {
             padding: 0 0 50px 0;
+            display: none;  
             button {
                 margin-left: 20px;
                 width: 14px;
@@ -2858,6 +2885,7 @@ span.irs-handle.to.type_last {
 }    
 
 #animatedModal {
+    display: none;
     border-radius: 10px;
 }    
 
@@ -2903,6 +2931,7 @@ span.irs-handle.to.type_last {
 
 #modal__popup {
     border-radius: 10px;
+    display: none;
 }
 
 .popup {
@@ -2984,3 +3013,10 @@ span.irs-handle.to.type_last {
         }
     }
 }
+
+
+
+
+
+
+@import '_media';
