@@ -112,15 +112,21 @@
 }
 
 .header__menu {
-    height: 70px;
+    // height: 70px;
     background-color: #000;
-
+  .menu {
+      display: flex;
+      align-items: center;
+      height: 70px;
 
     .menu__list {
-         display: flex;     
          font-size: 20px;
+         li {
+             display: inline;
+             & + li {
+                  margin-left: 33px;   
+             }
          .menu__list-li {
-            padding-left: 53px;
 
             .menu__list-a {
                 position: relative;
@@ -153,6 +159,8 @@
             }   
         }
     }
+   }
+ } 
 }
 
 .header__drop-down {
