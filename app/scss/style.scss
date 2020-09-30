@@ -1299,6 +1299,13 @@ span.irs-handle.to.type_last {
             line-height: 65px;
             font-weight: 300;
         }
+        &__img {
+            img {
+                min-width: 300px;
+                width: 100%;
+
+            }
+        }
 
     }
 
@@ -1328,12 +1335,10 @@ span.irs-handle.to.type_last {
                 .numbers {
                     color: #000;
                     font-size: 19px; 
+                    line-height: 29px;
                  } 
            } 
         }  
-        
-        
-
         &__text {
             margin-left: 100px;
             width: 650px;
@@ -1341,6 +1346,7 @@ span.irs-handle.to.type_last {
 
             h2 {
                 font-size: 33px;
+                line-height: 40px;
                 font-weight: 500;
             }
 
@@ -1353,25 +1359,31 @@ span.irs-handle.to.type_last {
 
 
 .slider {
+    &-slick {
+        img {
+            max-width: 300px;
+            width: 100%;
+            height: auto;
+            padding: 0px 10px;
+        }
+    }
 
     .subscribe {
         display: flex;
-        justify-content: center; 
-
-        padding-left: 50px;
+        justify-content: center;
         &-title {
             font-size: 32px;
             line-height: 38px;
             padding-right: 100px;
         }
         &-mail {
-
             input {
                 border: none;
                 border-bottom: 1px solid $text;
                 background-color: inherit;
                 padding-bottom: 11px;
-                width: 300px;
+                max-width: 300px;
+                // width: 100%;
                 padding-bottom: 5px;
             }
 
@@ -1419,8 +1431,8 @@ span.irs-handle.to.type_last {
                 display: block;
                 position: absolute;
                 top: 0;
-                left: 100px;
-                width: 200px;
+                left: 92px;
+                width: 51%;
                 height: 65px;
                 background-color: $dark-blue;
                 color: #fff;  
@@ -1433,8 +1445,8 @@ span.irs-handle.to.type_last {
                     content: '01';
                     padding-top: 16px;
                     position: absolute;
-                    bottom: -135px;
-                    right: 219px;
+                    bottom: -122px;
+                    right: 202px;
                     width: 80px;
                     height: 55px;
                     background-color: $dark-blue;
@@ -1578,8 +1590,6 @@ span.irs-handle.to.type_last {
     .subscribe {
         display: flex;
         justify-content: center;
-
-        padding-left: 50px;
         &-title {
             font-size: 32px;
             line-height: 38px;
