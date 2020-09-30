@@ -24,6 +24,10 @@
             padding: 7px 0;
             // border-bottom: 1px solid #fff;
         }
+        .header__drop-down .drop-down__link .fa-angle-down{
+            bottom: -27px;
+            right: -49px;
+        }
     }
 
     .menu__btn {
@@ -38,6 +42,24 @@
                 margin-top: 5px;
             }
         }
+    }
+
+    .header__drop-down .drop-down__list {
+        width: 300px;
+        top: 5px;
+        left: -358px;
+
+    }
+    .catalog__doors {
+        display: inline;
+    }
+    ul.catalog_list {
+        margin-right: 0px;
+
+    }
+    .header__menu .menu .menu__list li a {
+        margin-left: 0;
+        padding-bottom: 10px;
     }
 
     .footer {
@@ -109,6 +131,13 @@
     }
     .header__circle {
         left: -100px;
+    }
+    .menu__list {
+        top: 120px;
+    }
+    .header__drop-down .drop-down__list {
+        top: 40px;
+        left: -145px;
     }
 
     .footer__info-contact {
