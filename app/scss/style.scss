@@ -750,7 +750,7 @@ i.fa-arrow-right:before {
     color:$text;
     font-weight: 500;
     font-size: 20px;
-    line-height: 30px;
+    line-height: 40px;
     &-string {
         display: flex;
         justify-content: space-between;
@@ -2548,8 +2548,8 @@ span.irs-handle.to.type_last {
 
     h1{
         font-size: 62px;
-        font-weight: 400;
-        
+        line-height: 72px;
+        font-weight: 400; 
     }
     &__show {
         width: 600px;
@@ -2664,21 +2664,23 @@ span.irs-handle.to.type_last {
         &-btn {
             button {
                 background-color: $dark-blue;
-                min-width: 320px;
+                max-width: 320px;
+                width: 100%;
                 padding: 0 30px;
                    
                 height: 60px;
                 color: #fff;
                 text-transform: uppercase;
-                font-size: 15px;
+                font-size: 14px;
+                line-height: 20px;
                 border: none;
                 &:hover {
                     background-color: $red;
                     transition: 0.5s;
                 }
                 i.fa-arrow-right {
-                    padding-left: 14px;
-                    font-size: 20px;
+                    // padding-left: 14px; 
+                    font-size: 16px;
                     &:before {
                         margin-left: 8px;
                     }
@@ -2714,9 +2716,11 @@ span.irs-handle.to.type_last {
     }
 
 .detail {
-    padding: 100px 0 0 0;
+    padding: 50px 0 0 0;
     &__desc {
         display: flex;
+        flex-wrap: wrap-reverse;
+        justify-content: center;
         padding-bottom: 80px;    
       &-text {
            max-width: 450px;
@@ -2727,6 +2731,7 @@ span.irs-handle.to.type_last {
            }
            h2 {
                font-size: 60px;
+               line-height: 65px;   
                font-weight: 400;
            }
            .line {
@@ -2743,7 +2748,8 @@ span.irs-handle.to.type_last {
     &-img {
         padding-right: 50px;
         img {
-         width: 400px;
+            max-width: 400px;
+            width: 100%;
         }
     }
 
@@ -2787,8 +2793,10 @@ span.irs-handle.to.type_last {
     }
 
     &__info {
-    display: flex;
-    padding-bottom: 80px; 
+        display: flex;
+        flex-wrap: wrap-reverse;
+        justify-content: center;
+        padding-bottom: 80px;  
   &-text {
        max-width: 450px;
        padding-right: 60px;
@@ -2799,6 +2807,7 @@ span.irs-handle.to.type_last {
        h2 {
            font-size: 60px;
            font-weight: 400;
+           line-height: 65px; 
        }
        .line {
             width: 150px;
@@ -2811,12 +2820,13 @@ span.irs-handle.to.type_last {
            line-height: 30px;
        }
   }      
-&-img {
-    padding-right: 50px;
-    img {
-     width: 400px;
-    }
-}
+        &-img {
+            padding-right: 50px;
+            img {
+                max-width: 400px;
+                width: 100%;
+            }
+        }
 
 &-idea {
     width: 260px;
@@ -2858,9 +2868,10 @@ span.irs-handle.to.type_last {
     }
 
     &__model {
-
         display: flex;
-        padding-bottom: 80px; 
+        
+        justify-content: center;
+        padding-bottom: 80px;  
       &-text {
            max-width: 450px;
            padding-right: 60px;
@@ -2871,6 +2882,7 @@ span.irs-handle.to.type_last {
            h2 {
                font-size: 60px;
                font-weight: 400;
+               line-height: 65px; 
            }
            .line {
                 width: 150px;
@@ -2889,6 +2901,7 @@ span.irs-handle.to.type_last {
           img {
             width: 250px; 
             padding-left: 30px;
+            padding-top: 20px;
           }
           .block {
               width: 220px;
@@ -2900,6 +2913,7 @@ span.irs-handle.to.type_last {
               box-shadow: 0 -3px 28px rgba(0,0,0,0.25), 0 10px 10px rgba(0,0,0,0.22); 
           }
           &--arrows {
+            display: none;
             margin-top: 60px;
             margin-left: 30px;
             background-color: #e4e4e7;
@@ -2911,9 +2925,9 @@ span.irs-handle.to.type_last {
     }
 
     &__design {
-
         display: flex;
-        padding-bottom: 80px; 
+        justify-content: center;
+        padding-bottom: 80px;  
       &-text {
            max-width: 450px;
            padding-right: 60px;
@@ -2924,6 +2938,7 @@ span.irs-handle.to.type_last {
            h2 {
                font-size: 60px;
                font-weight: 400;
+               line-height: 65px; 
            }
            .line {
                 width: 150px;
@@ -2942,6 +2957,7 @@ span.irs-handle.to.type_last {
           img {
             width: 250px; 
             padding-left: 30px;
+            padding-top: 20px;
           }
           .block {
               width: 220px;
@@ -2953,6 +2969,7 @@ span.irs-handle.to.type_last {
               box-shadow: 0 -3px 28px rgba(0,0,0,0.25), 0 10px 10px rgba(0,0,0,0.22); 
           }
           &--arrows {
+            display: none;
             margin-top: 60px;
             margin-left: 30px;
             background-color: #e4e4e7;
@@ -3015,10 +3032,16 @@ span.irs-handle.to.type_last {
 }
 
 .popup {
-    width: 800px;
+    max-width: 800px;
     padding: 20px 40px;
+    overflow: hidden;
+    .fancybox-inner {
+        overflow: hidden;
+    }
     &__about {
-        display: flex;    
+        display: flex;  
+
+        flex-wrap: wrap;  
         &-img {
             img {
                 width: 250px;
@@ -3058,6 +3081,7 @@ span.irs-handle.to.type_last {
         }
     }
     &__constructor {
+        
         padding: 50px 0 50px 0;
         border-bottom: 1px solid #e7e5e3;
         &-title {
@@ -3071,6 +3095,7 @@ span.irs-handle.to.type_last {
                     color: $red;
                     font-weight: 600;
                     font-size: 21px;
+                    line-height: 27px;
                     padding-bottom: 50px;   
                     img {
                         width:22px; 
@@ -3089,6 +3114,7 @@ span.irs-handle.to.type_last {
         }
         &-text {
             font-size: 16px;
+            line-height: 29px;
             color: $text;
         }
     }

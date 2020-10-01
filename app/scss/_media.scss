@@ -1,3 +1,21 @@
+@media(max-width: 1190px) {
+    .detail__desc-idea {
+        width: 100%;
+        // max-width: 260px;
+        padding-left: 60px;
+        padding-bottom: 100px;
+    }
+    .detail__info-idea {
+        width: 100%;
+        // max-width: 260px;
+        padding-left: 60px;
+        padding-bottom: 100px;
+    }
+}
+
+  
+
+
 @media(max-width: 1150px) {
     .header__input {
         display: none;
@@ -77,6 +95,7 @@
         display: none;
     }
 
+
     .footer {
         flex-wrap: wrap;
     }
@@ -108,7 +127,24 @@
     .news__four {
         margin-top: 0px;
     }
-    
+    .detail__desc-text--about {
+        padding-bottom: 50px;
+    }
+    .detail__info-text--about {
+        padding-bottom: 50px;
+    }
+    .detail__model {
+        flex-wrap: wrap;
+    }
+    .detail__model-text {
+        padding-bottom: 60px;
+    }
+    .detail__design {
+        flex-wrap: wrap;
+    }
+    .detail__design-text {
+        padding-bottom: 60px;
+    }
     
 }
 
@@ -143,7 +179,13 @@
         top: 20%;
         left: 30%;
     }
-    
+    .set__block {
+        justify-content: center;
+        flex-wrap: wrap;
+    }
+    .set__complete {
+        padding-top: 50px;
+    }
 }
 
 @media(max-width: 880px) { 
@@ -152,6 +194,14 @@
     }
     .news__four {
         padding: 20px 50px 40px 0;
+    }
+    .detail__model-img {
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+    .detail__design-img {
+        flex-wrap: wrap;
+        justify-content: center;
     }
 }
 
@@ -255,6 +305,9 @@
     
 }
 
+// 
+
+
 @media(max-width: 705px) {
     .main__info {
         padding-top: 50px;
@@ -282,7 +335,28 @@
     .subscribe-mail {
         padding-top: 25px;    
     }
+    .set__switch-block .tab {
+        margin-right: 45px;
+        line-height: 40px;
+    }
+}  
+
+@media(max-width: 635px) {
+    .popup__about-text {
+        padding-left: 0;
+    }
+    .popup__constructor-image {
+        padding-bottom: 50px;   
+    }
+    .detail__desc-idea {
+        padding-left: 0px;
+    }
+    .detail__info-idea {
+        padding-left: 0px;
+    }
+    
 }
+
 
 @media(max-width: 605px) {
     .header__contact {
@@ -359,6 +433,14 @@
     .slider .subscribe-mail button {
         margin-top: 10px;
         margin-left: 0;
+    }
+    
+    .set__show-img img {
+        width: 250px;
+        // margin-left: 17%;
+    }
+    .popup {
+        padding: 0px;
     }
 }
 
