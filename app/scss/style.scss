@@ -672,17 +672,19 @@ ul.catalog_list-second {
 
 .more {
     display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
     &__img {
         position: relative;
         img {
-         width: 730px;
-         height: 700px; 
+            max-width: 730px;
+            height: 700px;
       }
     }
     &__search {
         position: absolute;
         bottom: 66px;
-        left: 125px; 
+        left: 68px; 
         input {
             width: 380px;
             height: 52px;
@@ -835,6 +837,7 @@ i.fas.fa-caret-right {
 
 .charact {
     padding-top: 40px; 
+    padding-bottom: 40px; 
     display: flex;
     
 }
@@ -859,6 +862,7 @@ i.fas.fa-caret-right {
         }
         span {
             margin-top: 10px;
+            margin-left: 15px;
             width: 20px;
             height: 3px;
             background-color: $text;
@@ -1189,7 +1193,7 @@ span.irs-handle.to.type_last {
     
     &__items {
         display: flex;
-        // justify-content: center;
+        justify-content: center;
         flex-wrap: wrap;   
     }
     &-block {
@@ -1983,7 +1987,8 @@ span.irs-handle.to.type_last {
             position: relative;
             color: #fff;
             font-weight: 300;
-            min-width: 360px;
+            max-width: 300px;
+            width: 100%;
             height: 60px;
             border: none;
             background-color: $dark-blue;
