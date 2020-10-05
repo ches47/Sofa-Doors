@@ -171,12 +171,20 @@
     .more__info {
         left: 300px;
     }
+    .design-our {
+        max-width: 100%;
+        text-align: center;
+    }
     .design-proffesional {
         justify-content: center;
         flex-wrap: wrap;
     }
     .design-proffesional__main {
         padding-top: 50px;
+        padding-right: 178px;
+    }
+    .design-proffesional__img .fa-angle-down:before {
+        top: 219px;
     }
     .order__table-contacts {
         padding-left: 0;
@@ -441,6 +449,9 @@
     }
     .design-proffesional__img {
         margin-left: 150px;
+    }
+    .design-proffesional__main {
+        padding-right: 0px;
     }
     .payment__outcome {
         padding-left: 0px;
