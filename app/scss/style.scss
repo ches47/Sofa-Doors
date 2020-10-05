@@ -1935,10 +1935,19 @@ span.irs-handle.to.type_last {
                 }
                 .btn__blue {
                     background-color: $light-blue;
+                    &:hover {
+                        background-color: $red;   
+                        transition: 0.5s;
+                    }
                 }
                 .btn__red {
-                    background-color: $red;
+                    background-color: $light-blue;    
+                    &:hover {
+                        background-color: $red;
+                        transition: 0.5s;
+                    }
                 }
+                
       }
       &-bigBtn {
           padding-top: 50px;
@@ -1954,6 +1963,10 @@ span.irs-handle.to.type_last {
                     border-top-left-radius: 0px;
                     border-bottom-left-radius: 0px;
                     text-transform: uppercase;
+                    &:hover {
+                        background-color: $red;
+                        transition: 0.5s;
+                    }
                     .fa-arrow-right {
                        position: absolute;
                        top: 19px;
