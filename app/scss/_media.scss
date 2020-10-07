@@ -307,6 +307,9 @@
         font-size: 31px;
         line-height: 40px;
     }
+    .project-product .doors-images {
+        margin-right: 40px;
+    }
     .project-product__doors img {
         margin-left: 30px;
         margin-bottom: 20px;
@@ -372,6 +375,15 @@
         margin: 50px 0px;
     }
     
+    .project-product .doors-images .doors-image__1 {
+        margin-bottom: 20px;
+    }
+    .project-product .doors-images .doors-image__2 {
+        margin-bottom: 20px;
+    }
+    .project-product .doors-images .doors-image__3 {
+        margin-bottom: 20px;
+    }
 }
 
 @media(max-width: 705px) {

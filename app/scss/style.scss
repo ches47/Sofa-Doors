@@ -1599,7 +1599,7 @@ span.irs-handle.to.type_last {
                 font-weight: 400;
             } 
             p.text {
-                font-size: 22px;
+                // font-size: 22px;
                 color: $text;
                 line-height: 31px;
             }
@@ -1613,12 +1613,16 @@ span.irs-handle.to.type_last {
             line-height: 50px;
             font-weight: 400;
         }
+
         &__doors {
+           
+        }
+        .doors-images {
             display: flex;
             justify-content: center;
+            flex-wrap: wrap;
             position: relative;
             text-align: center;
-
             img {
                 margin-left: 60px;
             }
@@ -1631,22 +1635,32 @@ span.irs-handle.to.type_last {
                 font-size: 17px;
                 font-weight: 500;
             }
+            .doors-image__1 {
+                position: relative;
+                // margin-bottom: 20px;
+               
             .doors-block1 {
                 position: absolute;
-                bottom: 7px;
-                left: 246px;
+                bottom: 0%;
+                left: 16%;
             }
+           }
+           .doors-image__2 {
+            position: relative;
             .doors-block2 {
                 position: absolute;
-                bottom: 7px;
-                left: 503px;
+                bottom: 0%;
+                left: 16%;
             }
-            .doors-block3 {
-                position: absolute;
-                bottom: 7px;
-                right: 188px;
+        }
+            .doors-image__3 {
+                position: relative;
+                .doors-block3 {
+                    position: absolute;
+                    bottom: 0%;
+                    left: 17%;
+                }
             }
-
         }
     }
     .subscribe {
