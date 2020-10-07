@@ -13,7 +13,7 @@
 </head>
 <body>
 
-     <header class="header">
+     <!-- <header class="header">
         <div class="header__top">
           <div class="container">
             <div class="header__top-inner"> 
@@ -117,9 +117,9 @@
             </div>       
         </div>
       
-    </header>  
+    </header>   -->
 
-    <section class="more">
+    <!-- <section class="more">
 
         <div class="more__img">
             <img src="img/category/category-pic.jpg" alt="door_more">
@@ -168,18 +168,26 @@
 
             </div>
         </div>
-    </div>  
+    </div>   -->
 
     <section class="content">
         <div class="container">
             
             <div class="charact">
                 <aside class="charact__block">
+                    
+                    
                     <div class="block__color">
-                        <div class="block__color-choice">
-                            <a href="#"> Цвет</a> <span></span>
+
+                        <div class="block__color-choice content_toggle">
+                            <a href="#"> Цвет</a> 
+                            <button>
+                                <span class="plus"><i class="fa fa-plus"></i></span>
+                                <span class="minus"><i class="fa fa-minus"></i></span>
+                            </button>
                         </div>
-                        <div class="block__color-circle">
+
+                        <div class="block__color-circle content_block" style="display: none;">
                             <div class="circle circle-blue"></div>
                             <div class="circle circle-orange"></div>
                             <div class="circle circle-light"></div>
@@ -192,13 +200,17 @@
                     </div>
 
                     <div class="block__color">
-                        <div class="block__color-choice">
-                           <a href="#">Характеристики</a><span></span>  
+                        <div class="block__color-choice content_toggle2">
+                           <a href="#">Характеристики</a>
+                           <button>
+                               <span class="plus"><i class="fa fa-plus"></i></span>
+                               <span class="minus"><i class="fa fa-minus"></i></span>
+                           </button>  
                         </div>
-                        <ul class="block__new block">
+                      <div class="content_block2" style="display: none;" > 
+                        <ul class="block__new block ">
                             <a href="#">Новинки</a>   
                         </ul>
-
                         <div class="block__material">
                             <ul class="block__material-name"> <a href="#" class="material__link"> Материал</a>
                                
@@ -276,7 +288,6 @@
 
                             </ul> 
                         </div>
-                        
                         <ul class="block__discounts block">
                             <a href="#">Скидки</a>   
                         </ul>
@@ -292,23 +303,34 @@
                         <ul class="block__baseboard block">
                             <a href="#">Плинтус</a>   
                         </ul>
-
+                     </div>   
                     </div>
 
-                    <div class="block__color price-range">
-                        <div class="block__color-choice">
-                            <a href="#"> Стоимость</a> <span></span>
+                    <div class="block__color price-range content_toggle3">
+                        <div class="block__color-choice ">
+                            <a href="#"> Стоимость</a>
+                            <button class="btn-plus-minus">
+                                <span class="plus"><i class="fa fa-plus"></i></span>
+                                <span class="minus"><i class="fa fa-minus"></i></span>
+                           </button> 
                         </div>  
+                      <div class="content_block3" style="display: none;"> 
                         <form>
                             <input type="text" class="js-range-slider" name="my_range" value="" />
                             <button type="reset">Сбросить <span>X </span></button>
                         </form>
                      </div>
+                    </div>
 
-                     <div class="block__color price-range">
+                     <div class="block__color price-range content_toggle4">
                         <div class="block__color-choice">
-                            <a href="#">Размер</a> <span></span>
+                            <a href="#">Размер</a> 
+                            <button class="btn-plus-minus">
+                                <span class="plus"><i class="fa fa-plus"></i></span>
+                                <span class="minus"><i class="fa fa-minus"></i></span>
+                           </button> 
                         </div>  
+                       <div class="content_block4" style="display: none;">
                         <div class="block__parameter">
                             <div class="block__parameter-num"><a href="#"> 2000*800</a></div>
                             <div class="block__parameter-num"><a href="#">2000*700</a></div>
@@ -320,6 +342,7 @@
                             <a href="#">по размерам</a>
                         </div>
                      </div>
+                    </div>  
                     
                 </aside>
 

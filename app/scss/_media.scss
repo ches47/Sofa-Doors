@@ -16,18 +16,21 @@
         padding: 0px 0px;
         left: 400px;
     }
-    .more__info-about-text { 
+        .more__info-about-text { 
+            color: #fff;
+        }
+    .more__info-about-desc {
         color: #fff;
     }
-    .more__info-about-desc {
-        color: $green;
-    }
-    .more__info-about-title {
-        color: $blue;
-    }
+    // .more__info-about-title {
+    //     color: $blue;
+    // }
     .map {
         flex-wrap: wrap-reverse;
         justify-content: center;
+    }
+    .ourContacts__info {
+        padding-left: 20px;
     }
 }
 
@@ -128,7 +131,7 @@
         justify-content: center;
     }
     .order__table-basket {
-        border-top: 2px solid #bfbcbc;
+        // border-top: 2px solid #bfbcbc;
         border-right: none;
         padding-top: 50px;
     }
@@ -189,8 +192,14 @@
     .order__table-contacts {
         padding-left: 0;
     }
-
     
+    
+}
+
+@media (max-width: 980px) {
+    .order__table-basket {
+        border-top: 2px solid #bfbcbc;
+    }
 }
 
 @media(max-width: 900px) {
@@ -515,6 +524,9 @@
     }   
     .order__table-contacts input.data {
         width: 120px;
+    }
+    .order__table {
+        border: none;
     }
     .payment__order-name {
         font-size: 14px;

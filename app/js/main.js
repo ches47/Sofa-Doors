@@ -36,6 +36,32 @@ $(function(){
           }
         ]
     });
+    
+    $('.center').slick({
+      centerMode: true,
+      centerPadding: '60px',
+      slidesToShow: 3,
+      responsive: [
+        {
+          breakpoint: 768,
+          settings: {
+            arrows: false,
+            centerMode: true,
+            centerPadding: '40px',
+            slidesToShow: 3
+          }
+        },
+        {
+          breakpoint: 480,
+          settings: {
+            arrows: false,
+            centerMode: true,
+            centerPadding: '40px',
+            slidesToShow: 1
+          }
+        }
+      ]
+    });
 
     $('.project-slider__slick-img').slick({
     dots: false,
@@ -99,9 +125,50 @@ $(function(){
         return false;
     });
 
+    // Показ блока по клику (для цвета) Catalog Page 
+    $(document).ready(function(){
+      $('.content_toggle').click(function(){
+        $('.content_block').slideToggle(300);      
+        return false;
+      });
+    });
+
+    // Показ блока по клику (для Харак-ки) Catalog Page 
+    $(document).ready(function(){
+      $('.content_toggle2').click(function(){
+        $('.content_block2').slideToggle(300);      
+        return false;
+      });
+    });
+
+    // Показ блока по клику (для Стоимость) Catalog Page 
+    $(document).ready(function(){
+      $('.content_toggle3').click(function(){
+        $('.content_block3').slideToggle(300);      
+        return false;
+      });
+    });
+
+    // Показ блока по клику (для Размер) Catalog Page 
+    $(document).ready(function(){
+      $('.content_toggle4').click(function(){
+        $('.content_block4').slideToggle(300);      
+        return false;
+      });
+    });
+
+    // + -  (для цвета) Catalog Page 
+    $('button').on("click", function(){
+      $(this).toggleClass('active');
+    });
+
     
 
+    
 
+    
+    
+    
     // Adaptive 
     $('.menu__btn').on('click', function() {
       $('.menu__list').slideToggle();  

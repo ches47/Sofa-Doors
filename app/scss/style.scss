@@ -725,7 +725,7 @@ ul.catalog_list-second {
         }
         &-about-btn {
             button {
-                width: 310px;
+                width: 290px;
                 height: 60px;
                 border: none;
                 color: #fff;  
@@ -845,7 +845,9 @@ i.fas.fa-caret-right {
 .block__color {
     max-width: 290px;
     padding-bottom: 50px;   
+    
     &-choice {
+        display: none;
         display: flex;
         justify-content: space-between;
         // margin-left: 40px;
@@ -860,13 +862,51 @@ i.fas.fa-caret-right {
                 text-decoration: underline;
             }
         }
-        span {
-            margin-top: 10px;
-            margin-left: 15px;
-            width: 20px;
-            height: 3px;
-            background-color: $text;
-        }
+       button {
+            color: #000;
+            background:$light-gray;
+            width: 30px;
+            height: 30px;
+            position: relative;
+            font-size: 20px;
+            cursor: pointer;
+            border: 0;
+            outline: 0;
+            padding: 0
+            }
+            .plus,
+            .minus {
+            color:  $text;
+            padding: 10px;
+            width: 30px;
+            height: 30px;
+            line-height: 50px;
+            display: block;
+            position: absolute;  
+            top: -19px;
+            left: -3px;
+            right: 0;
+            bottom: 0;
+            text-align: center;
+            box-sizing: border-box;
+            transition: .5s all ease-out;
+            }
+            .plus {
+            opacity: 1;
+            transform: rotate(0deg);
+            }
+            button.active .plus {
+            opacity: 0;
+            transform: rotate(10deg);
+            }
+            .minus {
+            opacity: 0;
+            transform: rotate(10deg);
+            }
+            button.active .minus {
+            opacity: 1;
+            transform: rotate(0deg);
+            }
     }
     &-circle {
         padding-right: 40px;
@@ -918,6 +958,9 @@ i.fas.fa-caret-right {
     form {
         padding-top: 20px;
         padding-bottom: 25px;    
+    }
+    button.btn-plus-minus {
+        margin-top: 0px;
     }
     button {
         margin-top: 70px;  
@@ -1040,7 +1083,7 @@ span.irs-handle.to.type_last {
 
 
 .block__material-name  {
-    padding-bottom: 20px;    
+    // padding-bottom: 20px;    
     font-size: 22px;
     font-weight: 600;   
     .material__link {
@@ -1195,6 +1238,9 @@ span.irs-handle.to.type_last {
         display: flex;
         justify-content: center;
         flex-wrap: wrap;   
+
+        height: 530px;
+        overflow: hidden;  //убрвть это чтобы появился товар
     }
     &-block {
         padding-left: 120px;
@@ -2175,7 +2221,7 @@ span.irs-handle.to.type_last {
 }
 
 .ourContacts {
-    padding: 20px 0 100px 0;
+    padding: 80px 0 100px 0;
     display: flex;
     flex-wrap: wrap-reverse;
     justify-content: center;
@@ -2505,7 +2551,7 @@ span.irs-handle.to.type_last {
 
      &-coupon {
         input {
-            width: 180px;
+            width: 140px;
             height: 40px;
             padding-left: 20px;
             color: $text;
