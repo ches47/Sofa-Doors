@@ -2091,6 +2091,7 @@ span.irs-handle.to.type_last {
 
 .production {
     display: flex;
+    flex-wrap: wrap;
     justify-content: center;
     position: relative;
     
@@ -2125,11 +2126,20 @@ span.irs-handle.to.type_last {
 
         &-images {
            display: flex;  
-           padding-left: 100px;
+           justify-content: center;
+           flex-wrap: wrap;
+        //    padding-left: 100px;
+            .content-images__block1,
+            .content-images__block2,
+            .content-images__block3 {
+                margin-bottom: 80px;
+            }
            .content-image {
                padding-left: 40px;
                position: relative;
+               
            }
+           
            img {
                width: 250px;
            }

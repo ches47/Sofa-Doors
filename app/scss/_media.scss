@@ -112,7 +112,9 @@
     .slider-slick .img1 .block {
         display: none;
     }
-    
+    .production__content {
+        display: none;
+    }
 
     .footer {
         flex-wrap: wrap;
@@ -651,5 +653,8 @@
         .menu__list{
                 display: block !important;
         } 
+    }
+    .production__content {
+        display: block !important;
     }
  }
