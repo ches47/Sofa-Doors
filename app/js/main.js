@@ -162,13 +162,6 @@ $(function(){
       $(this).toggleClass('active');
     });
 
-    
-
-    
-
-    
-    
-    
     // Adaptive 
     $('.menu__btn').on('click', function() {
       $('.menu__list').slideToggle();  
