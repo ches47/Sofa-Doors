@@ -167,6 +167,13 @@ $(function(){
       $('.menu__list').slideToggle();  
     });
 
-
+    //(Кнопка "Показать все") Catalog Page 
+    $(function () {
+      $('.doors__main-block').slice(0, 3).show();
+      $('#loadMore').on('click', function(e) {
+        e.preventDefault();
+        $('.doors__main-block:hidden').slice(0, 3).slideDown();
+      }) 
+    })    
 });
 

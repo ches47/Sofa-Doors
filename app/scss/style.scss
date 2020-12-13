@@ -1233,15 +1233,18 @@ span.irs-handle.to.type_last {
 }
 
 .doors__main {
+
     &__items {
         display: flex;
         justify-content: center;
         flex-wrap: wrap;   
 
-        height: 530px;
+        // height: 530px;
         overflow: hidden;  //убрвть это чтобы появился товар
     }
     &-block {
+       display: none;  
+
         padding-left: 120px;
         padding-bottom: 60px;
         text-align: center;
