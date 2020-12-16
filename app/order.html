@@ -154,7 +154,7 @@
                         Дверь входная
                     </div>
                     <div class="order__table-number">
-                        <input type="number" min="1" placeholder="1">
+                        <input type="number" placeholder="1" min="1" maxlength="99"> 
                     </div>
                     <div class="order__table-price">
                         10.000
@@ -170,7 +170,7 @@
                         Дверь входная
                     </div>
                     <div class="order__table-number">
-                        <input type="text" placeholder="1">
+                        <input type="number" placeholder="1" min="1" maxlength="99"> 
                     </div>
                     <div class="order__table-price">
                         10.000
@@ -186,7 +186,7 @@
                         Дверь входная
                     </div>
                     <div class="order__table-number">
-                        <input type="text" placeholder="1">
+                        <input type="number" placeholder="1" min="1" maxlength="99"> 
                     </div>
                     <div class="order__table-price">
                         10.000
@@ -211,25 +211,26 @@
              <div class="order__table-contacts">
                 <div class="order__table-contacts--person">
                     <span>ФИО</span> <br/>
-                    <input type="text" placeholder="Игорь">
+                    <input type="text" placeholder="ФИО" required>
                 </div>
                 <div class="order__table-contacts--num">
                     <span>Номер телефона</span><br/>
-                    <input type="text" placeholder="+38 000 000 001">
+                    <input type="number" placeholder="+38 000 000 001" required>
                 </div>
               <div class="order__table-contacts--delivery">
                 <div class="order__table-contacts--date">
                     <span>Дата доставки</span><br/>
-                    <input class="data" type="text" placeholder="12 / 03">
+                    <input class="data" placeholder="12 / 03" inputmode="numeric" minlength="4"
+                    maxlength="4" size="4">
                 </div>
                 <div class="order__table-contacts--time">
                     <span>Время</span><br/>
-                    <input class="data time" type="text" placeholder="09:00-14.00">
+                    <input class="data time" type="number" placeholder="09:00-14.00" required>
                 </div>
             </div>    
                 <div class="order__table-contacts--mail">
                     <span>Email</span><br/>
-                    <input type="text" placeholder="doors@gmail.com">
+                    <input type="email" name="email" placeholder="doors@gmail.com" required>
                 </div>
 
                 <div class="order__table-contacts--btn" data-fancybox data-animation-duration="700"
