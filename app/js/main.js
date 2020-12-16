@@ -174,6 +174,7 @@ $(function(){
         e.preventDefault();
         $('.doors__main-block:hidden').slice(0, 3).slideDown();
       }) 
+      
     })    
 });
 
